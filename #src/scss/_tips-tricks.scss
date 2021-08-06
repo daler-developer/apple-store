@@ -1,0 +1,71 @@
+.tips-tricks {
+  & {
+    margin-top: 200px;
+  }
+  &__body {
+
+  }
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  &__swiper-container {
+    margin-top: 32px;
+    padding: 0 0 32px 0;
+  }
+  &__swiper-slide {
+  }
+  &__swiper-body {
+    padding: 16px;
+  }
+  &__swiper-img {
+    width: 100%;
+    height: 251px;
+    object-fit: cover;
+  }
+  &__swiper-title {
+    font-weight: 600;
+    color: $color-dark;
+    font-size: 24px;
+    line-height: 28px;
+    white-space: pre-line;
+  }
+  &__swiper-date {
+    margin-top: 8px;
+    line-height: 21px;
+    font-size: 14px;
+    color: $color-mute-2;
+  }
+  &__swiper-pagination {
+    
+  }
+  &__swiper-pagination .swiper-pagination-bullet-active {
+    background-color: $color-orange;
+  }
+  &__button-next {
+    @extend %button;
+  }
+  &__button-prev {
+    @extend %button;
+  }
+}
+
+
+%button {
+  @include center;
+  background-color: white;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 30px;
+  box-shadow: 0 4px 14px 1px rgba(0, 0, 0, 0.16);
+  color: $color-orange;
+  font-size: 30px;
+  position: absolute;
+
+  &::after {
+    content: '';
+  }
+}

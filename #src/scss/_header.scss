@@ -1,0 +1,122 @@
+.header {
+  & {
+    background-color: $color-light-orange;
+    position: relative;
+  }
+  &__body {
+    @include flex(row, center, none);
+    height: 125px;
+
+    @media all and (max-width: $bp-tablet) {
+      height: 50px;
+      justify-content: space-between;
+    }
+  }
+  &__main {
+    @include flex(row, center, none);
+    flex-basis: ((100*494)/1240)*1%;
+  }
+  &__actions {
+    @include flex(row, center, none);
+  }
+  &__actions-item {
+    @include gutter-h(32px);
+
+    @media all and (max-width: $bp-tablet) {
+      @include gutter-h(15px); 
+    }
+  }
+  &__avatar {
+    border-radius: 50%;
+    background-color: lightblue;
+    width: 40px;
+    height: 40px;
+
+    @media all and (max-width: $bp-tablet) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  &__search {
+    flex-grow: 1;
+
+    @media all and (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
+  &__search-icon--in-actions {
+    display: none;
+
+    @media all and (max-width: $bp-tablet) {
+      display: block;
+    }
+  }
+  &__search-box {
+    @include flex(row, center, none);
+    padding: 0 0 0 12px;
+    width: 473px;
+    height: 45px;
+    background-color: $color-white;
+  }
+  &__search-input {
+    margin-left: 12px;
+  }
+  &__search-box--dropdown {
+    @include b;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transition: all .2s ease-in;
+  }
+  &__search-box--active {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+    transition: all .2s ease-in;
+  }
+  &__logo {
+    @include flex(row, center, none);
+    font-size: 24px;
+    font-weight: 700;
+  }
+  &__nav {
+    @include flex(row, center, none);
+    margin-left: 41px;
+
+    @media all and (max-width: $bp-tablet) {
+      display: none; 
+    }
+  }
+  &__nav-link {
+    @include flex(row, center, none);
+    @include gutter-h(40px);
+    cursor: pointer;
+    position: relative;
+  }
+  &__arrow-icon {
+    margin-left: 8px;
+  }
+  &__dropdown {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: $color-orange;
+    top: calc(100% + 10px);
+    left: 0;
+    right: none;
+  }
+  &__nav-link:hover .header__dropdown {
+    transition: all 300ms ease-in;
+    visibility: visible;
+    top: 100%;
+    opacity: 1;
+  }
+  &__dropdown-menu-link {
+    color: white;
+    word-wrap: normal;
+  }
+}

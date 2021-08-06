@@ -1,0 +1,40 @@
+.pros {
+  & {
+    margin-top: 200px;
+  }
+  &__container {
+
+  }
+  &__body {
+    display: flex;
+  }
+  &__pro {
+    @include flex(row, center, none);
+    flex-basis: 25%;
+  }
+  &__pro:nth-child(1) {
+    justify-content: flex-start;
+  }
+  &__pro:nth-child(2), &__pro:nth-child(3) {
+    justify-content: center;
+  }
+  &__pro:nth-child(4) {
+    justify-content: flex-end;
+  }
+  &__pro-right {
+    margin-left: 24px;
+    @include flex(column, stretch, center);
+  }
+  &__title-lg {
+    color: $color-dark;
+    line-height: 27px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  &__title-sm {
+    margin-top: 2px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $color-mute-2;
+  }
+}
