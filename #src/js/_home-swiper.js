@@ -16,7 +16,7 @@ new Swiper('.home__swiper-container', {
     el: '.home__swiper-scrollbar',
   },
 
-  spaceBetween: 20,
+  spaceBetween: 50,
 
   slidesPerView: 1
 })
