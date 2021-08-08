@@ -9,4 +9,3 @@ burger.addEventListener('click', () => {
 toggleNavCloseIcon.addEventListener('click', () => {
   toggleNav.classList.remove('toggle-nav--opened')
 })
-

@@ -1,98 +1,64 @@
 <div class="products">
-  <div class="products__container container">
+  <div class="container products__container">
+    <h2 class="h1 products__title">
+      Products
+    </h2>
     <div class="products__body">
-
-
-      <div class="products__title">Products</div>
-
       <ul class="products__list">
-
-        @@include('./_product.html', {
-          name: 'Syntherin',
-          desc: 'Stylish cafe chair',
-          newPrice: 'Rp 2.500.000',
-          oldPrice: 'Rp 2.500.000',
-          ballText: 'New',
-          state: 'new',
+        @@include('_product.html', {
+          title: 'iPhone 12 Max',
+          statusClass: 'availabe',
+          status: 'Available now',
           img: 'p-1.png'
         })
 
-        @@include('./_product.html', {
-          name: 'Lolito',
-          desc: 'Luxory big sofa',
-          newPrice: 'Rp 2.500.000',
-          oldPrice: 'Rp 2.500.000',
-          ballText: '-30%',
-          state: 'discount',
+        @@include('_product.html', {
+          title: 'iPhone 12 Max',
+          statusClass: 'not-available',
+          status: 'Available now',
           img: 'p-2.png'
         })
-        
-        @@include('./_product.html', {
-          name: 'Respira',
-          desc: 'Minimalist fan',
-          newPrice: 'Rp 1.500.000',
-          oldPrice: 'Rp 3.500.000',
-          ballText: 'New',
-          state: 'new',
+
+        @@include('_product.html', {
+          title: 'iPhone 12 Max',
+          statusClass: 'not-available',
+          status: 'Available now',
           img: 'p-3.png'
         })
-        
-        @@include('./_product.html', {
-          name: 'Muggo',
-          desc: 'Small mugo',
-          newPrice: 'Rp 3.000,00',
-          oldPrice: 'Rp 3.500.000',
-          ballText: '-20%',
-          state: 'discount',
-          img: 'p-4.jpg'
+        @@include('_product.html', {
+          title: 'iPhone 12 Max',
+          statusClass: 'not-available',
+          status: 'Available now',
+          img: 'p-4.png'
         })
-
-        @@include('./_product.html', {
-          name: 'Syntherin',
-          desc: 'Stylish cafe chair',
-          newPrice: 'Rp 2.500.000',
-          oldPrice: 'Rp 2.500.000',
-          ballText: 'New',
-          state: 'new',
+        @@include('_product.html', {
+          title: 'iPhone 12 Max',
+          statusClass: 'not-available',
+          status: 'Available now',
           img: 'p-5.png'
         })
-
-        @@include('./_product.html', {
-          name: 'Lolito',
-          desc: 'Luxory big sofa',
-          newPrice: 'Rp 2.500.000',
-          oldPrice: 'Rp 2.500.000',
-          ballText: '-30%',
-          state: 'discount',
-          img: 'p-6.jpg'
+        @@include('_product.html', {
+          title: 'iPhone 12 Max',
+          statusClass: 'not-available',
+          status: 'Available now',
+          img: 'p-6.png'
         })
-        
-        @@include('./_product.html', {
-          name: 'Respira',
-          desc: 'Minimalist fan',
-          newPrice: 'Rp 1.500.000',
-          oldPrice: 'Rp 3.500.000',
-          ballText: 'New',
-          state: 'new',
+        @@include('_product.html', {
+          title: 'iPhone 12 Max',
+          statusClass: 'not-available',
+          status: 'Available now',
           img: 'p-7.png'
         })
-        
-        @@include('./_product.html', {
-          name: 'Muggo',
-          desc: 'Small mugo',
-          newPrice: 'Rp 3.000,00',
-          oldPrice: 'Rp 3.500.000',
-          ballText: '-20%',
-          state: 'discount',
+        @@include('_product.html', {
+          title: 'iPhone 12 Max',
+          statusClass: 'not-available',
+          status: 'Available now',
           img: 'p-8.png'
         })
-
       </ul>
-
-      <button class="products__show-btn">
-        Show More
-      </button>
-
     </div>
+    @@include('_pagination.html', {
+      class: 'products__pagination'
+    })
   </div>
 </div>

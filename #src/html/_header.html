@@ -1,93 +1,33 @@
 <header class="header">
-  <div class="header__container container">
+  <div class="container header__container">
     <div class="header__body">
-
-      <div class="header__search-box header__search-box--dropdown">
-        <span class="header__search-icon material-icons">
-          search
-        </span>
-        <input class="header__search-input" placeholder="Search">
+      <div class="header__logo">
+        SmartTeck.
       </div>
-
-
-
-
-      <div class="header__main">
-        <div class="header__logo">Funiro.</div>
-        <ul class="header__nav">
-
-          <li class="header__nav-link">
-            <span class="header__nav-link-text">
-              Home
-            </span>
-            <span class="header__arrow-icon material-icons">
-              keyboard_arrow_down
-            </span>
-
-            <div class="header__dropdown">
-              <ul class="header__dropdown-menu">
-                <li class="header__dropdown-menu-link">Location #1</li>
-                <li class="header__dropdown-menu-link">Location #2</li>
-                <li class="header__dropdown-menu-link">Location #3</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="header__nav-link">
-            <span class="header__nav-link-text">
-              Rooms
-            </span>
-            <span class="header__arrow-icon material-icons">
-              keyboard_arrow_down
-            </span>
-
-            <div class="header__dropdown">
-              <ul class="header__dropdown-menu">
-                <li class="header__dropdown-menu-link">Location #4</li>
-                <li class="header__dropdown-menu-link">Location #5</li>
-                <li class="header__dropdown-menu-link">Location #6</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="header__nav-link">
-            <span class="header__nav-link-text">
-              Inspirations
-            </span>
-          </li>
-
-
-        </ul>
-      </div>
-
-
-
-      <div class="header__search">
-        <div class="header__search-box">
-          <span class="header__search-icon material-icons">
-            search
+    <!-- Only mobile -->
+      <span class="material-icons header__burger">
+        menu
+      </span>
+    <!-- Only mobile -->
+      <ul class="header__nav">
+        <li class="header__nav-link header__nav-link--active">Main</li>
+        <li class="header__nav-link">Macbook</li>
+        <li class="header__nav-link">iPhone</li>
+        <li class="header__nav-link">Airpods</li>
+        <li class="header__nav-link">
+          <span class="material-icons header__location-icon">
+            location_on
           </span>
-          <input class="header__search-input" placeholder="Search">
-        </div>
-      </div>
-
-
-
-      <ul class="header__actions">
-        <span class="header__actions-item header__search-icon header__search-icon--in-actions material-icons">
+          Location
+        </li>
+      </ul>
+      <div class="header__search">
+        <span class="material-icons header__search-icon">
           search
         </span>
-        <span class="header__actions-item material-icons">
-          favorite_border
-        </span>
-        <span class="header__actions-item material-icons">
-          card_giftcard
-        </span>
-        <div class="header__actions-item header__avatar"></div>
-      </ul>
-
-
-
+        <input type="text" class="header__search-input" placeholder="Search">
+      </div>
     </div>
   </div>
+  <div class="header__line"></div>
 </header>

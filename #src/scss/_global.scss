@@ -1,0 +1,66 @@
+*, *::after, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Red Hat Display';
+  font-size: $font-size-base;
+  color: $color-dark;
+  line-height: 1em;
+}
+
+
+h1 {
+  font-size: $font-size-h1;
+  line-height: 47px;
+}
+
+h2 {
+  font-size: $font-size-h2;
+  line-height: 26px;
+}
+
+h3 {
+  font-size: $font-size-h3;
+  line-height: 26px;
+}
+
+.h1 {
+  font-size: $font-size-h1;
+  line-height: 47px;
+}
+
+.h2 {
+  font-size: $font-size-h2;
+  line-height: 26px;
+}
+
+.h3 {
+  font-size: $font-size-h3;
+  line-height: 26px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, input, textarea {
+  background-color: inherit;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  font-weight: 500;
+}

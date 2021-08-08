@@ -1,22 +1,40 @@
-<li class="products__product">
-  <div class="products__product-shade">
-    Add to cart
+<div class="product">
+  <h3 class="h2 product__title">@@title</h3>
+  <div class="product__status product__status--@@statusClass">
+    @@status
   </div>
-
-  <div class="products__product-ball products__product-ball--@@state">
-    @@ballText
+  <div class="product__img-container">
+    <img src="images/products/@@img" class="product__img">
   </div>
-  <img
-    src="./images/products/@@img"
-    alt="Wait"
-    class="products__product-img"
-  />
-  <div class="products__product-body">
-    <div class="products__product-name">@@name</div>
-    <div class="products__product-desc">@@desc</div>
-    <div class="products__product-price">
-      <div class="products__product-price-new">@@newPrice</div>
-      <div class="products__product-price-old">@@oldPrice</div>
-    </div>
+  <div class="product__colors">
+    Available colors
+    <ul class="product__colors-list">
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+    </ul>
   </div>
-</li>
+  <div class="product__reviews">
+    <ul class="product__stars">
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+    </ul>
+    <span>(28) reviews</span>
+  </div>
+  <div class="product__price">
+    $945.<span class="product__price--small">95</span>
+  </div>
+</div>

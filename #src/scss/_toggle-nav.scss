@@ -1,0 +1,40 @@
+.toggle-nav {
+  & {
+    position: fixed;
+    background: $color-white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all .2s ease-in;
+    transform: translateX(100%);
+    padding: 50px 0 0 0;
+    z-index: $z-toggle-nav;
+  }
+  &__close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  &--opened {
+    transform: translateX(0px);
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+  }
+  &__nav-link {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.583);
+    padding: 10px 0 10px 10px;
+    letter-spacing: .4px;
+    font-weight: 500;
+  }
+  &__nav-link:nth-last-child(1) {
+    border-bottom: none;
+  }
+  &__nav-link--active {
+    color: $color-blue;
+  }
+}

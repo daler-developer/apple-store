@@ -1,18 +1,24 @@
-$color-white: rgb(255, 255, 255);
-$color-dark: rgba(58, 58, 58, 1);
-$color-mute-1: rgba(58, 58, 58, 1);
-$color-mute-2: rgba(137, 137, 137, 1);
-$color-mute-3: rgba(244, 245, 247, 1);
-$color-orange: rgba(232, 159, 113, 1);
-$color-red: rgba(233, 113, 113, 1);
-$color-light-orange: rgba(252, 248, 243, 1);
-$color-green: rgba(46, 193, 172, 1);
-
-$bp-desktop: 992px;
-$bp-tablet: 768px;
-$bp-mobile: 450px;
-
 $font-size-base: 16px;
 
-$font-size-h1: 56px;
+$font-size-h1: 40px;
+$font-size-h2: 22px;
+$font-size-h3: 18px;
 
+$color-black: rgba(0, 0, 0, 1);
+$color-dark: rgba(19, 18, 24, 1);
+$color-blue: rgba(24, 104, 224, 1);
+$color-green: rgba(24, 191, 111, 1);
+$color-red-light: rgba(225, 35, 80, 1);
+$color-red-dark: rgba(235, 58, 58, 1);
+$color-yellow: rgba(255, 170, 4, 1);
+$color-mute: rgba(239, 238, 238, 1);
+$color-white: rgba(255, 255, 255, 1);
+$color-white-2: rgba(249, 249, 249, 1);
+$color-grey: rgba(196, 196, 196, 1);
+$color-grey-2: rgba(154, 154, 154, 1);
+$color-purple: rgba(188, 123, 217, 1);
+
+$z-toggle-nav: 1000;
+$z-footer-icons: 1;
+
+$bp-mobile: 460px;

@@ -1,0 +1,26 @@
+.pagination {
+  & {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 29px;
+    height: 29px;
+    border-radius: 8px;
+    color: $color-black;
+    cursor: pointer;
+  }
+  &__list-item--selected {
+    background-color: $color-dark;
+    color: $color-white;
+  }
+}

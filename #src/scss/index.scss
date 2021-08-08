@@ -1,12 +1,14 @@
 @import './variables';
-@import './mixins';
-@import './reset';
 @import './common';
+@import './mixins';
+@import './global';
 @import './header';
+@import './toggle-nav';
 @import './footer';
 @import './products';
-@import './tips-tricks';
-@import './home';
-@import './pros';
-@import './furniture';
-
+@import './product';
+@import './pagination';
+@import './intro';
+@import './discount';
+@import './desc';
+@import './popular';

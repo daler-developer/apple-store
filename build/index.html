@@ -5,624 +5,702 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./index.css">
 </head>
 <body>
   
   <header class="header">
-  <div class="header__container container">
+  <div class="container header__container">
     <div class="header__body">
-
-      <div class="header__search-box header__search-box--dropdown">
-        <span class="header__search-icon material-icons">
-          search
-        </span>
-        <input class="header__search-input" placeholder="Search">
+      <div class="header__logo">
+        SmartTeck.
       </div>
-
-
-
-
-      <div class="header__main">
-        <div class="header__logo">Funiro.</div>
-        <ul class="header__nav">
-
-          <li class="header__nav-link">
-            <span class="header__nav-link-text">
-              Home
-            </span>
-            <span class="header__arrow-icon material-icons">
-              keyboard_arrow_down
-            </span>
-
-            <div class="header__dropdown">
-              <ul class="header__dropdown-menu">
-                <li class="header__dropdown-menu-link">Location #1</li>
-                <li class="header__dropdown-menu-link">Location #2</li>
-                <li class="header__dropdown-menu-link">Location #3</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="header__nav-link">
-            <span class="header__nav-link-text">
-              Rooms
-            </span>
-            <span class="header__arrow-icon material-icons">
-              keyboard_arrow_down
-            </span>
-
-            <div class="header__dropdown">
-              <ul class="header__dropdown-menu">
-                <li class="header__dropdown-menu-link">Location #4</li>
-                <li class="header__dropdown-menu-link">Location #5</li>
-                <li class="header__dropdown-menu-link">Location #6</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="header__nav-link">
-            <span class="header__nav-link-text">
-              Inspirations
-            </span>
-          </li>
-
-
-        </ul>
-      </div>
-
-
-
+    <!-- Only mobile -->
+      <span class="material-icons header__burger">
+        menu
+      </span>
+    <!-- Only mobile -->
+      <ul class="header__nav">
+        <li class="header__nav-link header__nav-link--active">Main</li>
+        <li class="header__nav-link">Macbook</li>
+        <li class="header__nav-link">iPhone</li>
+        <li class="header__nav-link">Airpods</li>
+        <li class="header__nav-link">
+          <span class="material-icons header__location-icon">
+            location_on
+          </span>
+          Location
+        </li>
+      </ul>
       <div class="header__search">
-        <div class="header__search-box">
-          <span class="header__search-icon material-icons">
-            search
-          </span>
-          <input class="header__search-input" placeholder="Search">
-        </div>
-      </div>
-
-
-
-      <ul class="header__actions">
-        <span class="header__actions-item header__search-icon header__search-icon--in-actions material-icons">
+        <span class="material-icons header__search-icon">
           search
         </span>
-        <span class="header__actions-item material-icons">
-          favorite_border
-        </span>
-        <span class="header__actions-item material-icons">
-          card_giftcard
-        </span>
-        <div class="header__actions-item header__avatar"></div>
-      </ul>
-
-
-
+        <input type="text" class="header__search-input" placeholder="Search">
+      </div>
     </div>
   </div>
+  <div class="header__line"></div>
 </header>
-
-  <div class="home">
-  <div class="home__container container">
-    <div class="home__body">
-
-
-      <div class="swiper-container home__swiper-container">
-
-        <div class="home__bohauss">
-          <div class="home__bohauss-title">Bohauss</div>
-          <div class="home__bohauss-desc">Luxary big sofa</div>
-          <div class="home__bohauss-price">
-            Rp 17.000.000
-          </div>
-        </div>
-
-        <div class="home__intro">
-          <div class="home__intro-title">
-            High quality
-            Furniture just
-            For you
-          </div>
-          <div class="home__intro-desc"
-          >Our furniture is made from
-            selected and best quality materials
-            that are suitable for you dreams
-          </div>
-          <button class="home__shop-btn">
-            Shop now
+  <div class="intro">
+  <div class="container intro__container">
+    <div class="intro__body">
+      
+      <div class="intro__main">
+        <h1 class="intro__title">
+          Work can be pleasurable
+          with MacBook
+        </h1>
+        <p class="intro__about">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          sollicitudin cras aliquam vitae commodo consectetur nulla diam enim. 
+        </p>
+        <img src="images/intro-sm.png" alt="" class="intro__img intro__img--sm">
+        <div class="intro__main-footer">
+          <button class="intro__contact-btn">
+            Contact
           </button>
-        </div>
-
-        <div class="swiper-wrapper home__swiper-wrapper">
-
-          <div class="swiper-slide home__swiper-slide">
-            <img src="./images/home.jpg" class="home__img">
-          </div>
-          <div class="swiper-slide home__swiper-slide">
-            <img src="./images/home.jpg" class="home__img">
-          </div>
-          <div class="swiper-slide home__swiper-slide">
-            <img src="./images/home.jpg" class="home__img">
-          </div>
-          <div class="swiper-slide home__swiper-slide">
-            <img src="./images/home.jpg" class="home__img">
-          </div>
-
-        </div>
-
-        <div class="swiper-pagination home__swiper-pagination"></div>
-      
-        <!-- <div class="swiper-button-prev home__button-prev">
-          <span class="material-icons">
-            chevron_left
+          <span class="intro__location">
+            <span class="material-icons intro__location-icon">
+              location_on
+            </span> Location
           </span>
         </div>
-
-        <div class="swiper-button-next home__button-next">
-          <span class="material-icons">
-            chevron_right
-          </span>
-        </div> -->
-        
       </div>
 
-      
-    </div>
-  </div>
-</div>
-
-  <div class="pros">
-  <div class="container pros__container">
-    <div class="pros__body">
-
-
-      <div class="pros__pro">
-        <img src="./images/pros/pro-1.svg" class="pros__img">
-        <div class="pros__pro-right">
-          <div class="pros__title-lg">High quality</div>
-          <div class="pros__title-sm">crafted from top material</div>
-        </div>
-      </div>
-
-      <div class="pros__pro">
-        <img src="./images/pros/pro-2.png" class="pros__img">
-        <div class="pros__pro-right">
-          <div class="pros__title-lg">High quality</div>
-          <div class="pros__title-sm">crafted from top material</div>
-        </div>
-      </div>
-
-      <div class="pros__pro">
-        <img src="./images/pros/pro-3.png" class="pros__img">
-        <div class="pros__pro-right">
-          <div class="pros__title-lg">High quality</div>
-          <div class="pros__title-sm">crafted from top material</div>
-        </div>
-      </div>
-
-      <div class="pros__pro">
-        <img src="./images/pros/pro-4.png" class="pros__img">
-        <div class="pros__pro-right">
-          <div class="pros__title-lg">High quality</div>
-          <div class="pros__title-sm">crafted from top material</div>
-        </div>
-      </div>
-
+      <img src="images/intro.png" class="intro__img intro__img--lg">
 
     </div>
   </div>
 </div>
 
-  <div class="products">
-  <div class="products__container container">
-    <div class="products__body">
+  <div class="desc">
+  <img src="images/desc.png" class="desc__img">
+  <div class="desc__container container">
+    <div class="desc__body">
+      <ul class="desc__list">
 
+        <div class="desc__col">
+          <li class="desc__list-item">
+            <h3 class="h2 desc__title">Water proof</h3>
+            <p class="desc__about">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sagittis semper felis.
+            </p>
+          </li>
+          
+          <li class="desc__list-item">
+            <h3 class="h2 desc__title">Unique design</h3>
+            <p class="desc__about">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sagittis semper felis.
+            </p>
+          </li>
+        </div>
 
-      <div class="products__title">Products</div>
-
-      <ul class="products__list">
-
-        <li class="products__product">
-  <div class="products__product-shade">
-    Add to cart
-  </div>
-
-  <div class="products__product-ball products__product-ball--new">
-    New
-  </div>
-  <img
-    src="./images/products/p-1.png"
-    alt="Wait"
-    class="products__product-img"
-  />
-  <div class="products__product-body">
-    <div class="products__product-name">Syntherin</div>
-    <div class="products__product-desc">Stylish cafe chair</div>
-    <div class="products__product-price">
-      <div class="products__product-price-new">Rp 2.500.000</div>
-      <div class="products__product-price-old">Rp 2.500.000</div>
-    </div>
-  </div>
-</li>
-
-        <li class="products__product">
-  <div class="products__product-shade">
-    Add to cart
-  </div>
-
-  <div class="products__product-ball products__product-ball--discount">
-    -30%
-  </div>
-  <img
-    src="./images/products/p-2.png"
-    alt="Wait"
-    class="products__product-img"
-  />
-  <div class="products__product-body">
-    <div class="products__product-name">Lolito</div>
-    <div class="products__product-desc">Luxory big sofa</div>
-    <div class="products__product-price">
-      <div class="products__product-price-new">Rp 2.500.000</div>
-      <div class="products__product-price-old">Rp 2.500.000</div>
-    </div>
-  </div>
-</li>
-        
-        <li class="products__product">
-  <div class="products__product-shade">
-    Add to cart
-  </div>
-
-  <div class="products__product-ball products__product-ball--new">
-    New
-  </div>
-  <img
-    src="./images/products/p-3.png"
-    alt="Wait"
-    class="products__product-img"
-  />
-  <div class="products__product-body">
-    <div class="products__product-name">Respira</div>
-    <div class="products__product-desc">Minimalist fan</div>
-    <div class="products__product-price">
-      <div class="products__product-price-new">Rp 1.500.000</div>
-      <div class="products__product-price-old">Rp 3.500.000</div>
-    </div>
-  </div>
-</li>
-        
-        <li class="products__product">
-  <div class="products__product-shade">
-    Add to cart
-  </div>
-
-  <div class="products__product-ball products__product-ball--discount">
-    -20%
-  </div>
-  <img
-    src="./images/products/p-4.jpg"
-    alt="Wait"
-    class="products__product-img"
-  />
-  <div class="products__product-body">
-    <div class="products__product-name">Muggo</div>
-    <div class="products__product-desc">Small mugo</div>
-    <div class="products__product-price">
-      <div class="products__product-price-new">Rp 3.000,00</div>
-      <div class="products__product-price-old">Rp 3.500.000</div>
-    </div>
-  </div>
-</li>
-
-        <li class="products__product">
-  <div class="products__product-shade">
-    Add to cart
-  </div>
-
-  <div class="products__product-ball products__product-ball--new">
-    New
-  </div>
-  <img
-    src="./images/products/p-5.png"
-    alt="Wait"
-    class="products__product-img"
-  />
-  <div class="products__product-body">
-    <div class="products__product-name">Syntherin</div>
-    <div class="products__product-desc">Stylish cafe chair</div>
-    <div class="products__product-price">
-      <div class="products__product-price-new">Rp 2.500.000</div>
-      <div class="products__product-price-old">Rp 2.500.000</div>
-    </div>
-  </div>
-</li>
-
-        <li class="products__product">
-  <div class="products__product-shade">
-    Add to cart
-  </div>
-
-  <div class="products__product-ball products__product-ball--discount">
-    -30%
-  </div>
-  <img
-    src="./images/products/p-6.jpg"
-    alt="Wait"
-    class="products__product-img"
-  />
-  <div class="products__product-body">
-    <div class="products__product-name">Lolito</div>
-    <div class="products__product-desc">Luxory big sofa</div>
-    <div class="products__product-price">
-      <div class="products__product-price-new">Rp 2.500.000</div>
-      <div class="products__product-price-old">Rp 2.500.000</div>
-    </div>
-  </div>
-</li>
-        
-        <li class="products__product">
-  <div class="products__product-shade">
-    Add to cart
-  </div>
-
-  <div class="products__product-ball products__product-ball--new">
-    New
-  </div>
-  <img
-    src="./images/products/p-7.png"
-    alt="Wait"
-    class="products__product-img"
-  />
-  <div class="products__product-body">
-    <div class="products__product-name">Respira</div>
-    <div class="products__product-desc">Minimalist fan</div>
-    <div class="products__product-price">
-      <div class="products__product-price-new">Rp 1.500.000</div>
-      <div class="products__product-price-old">Rp 3.500.000</div>
-    </div>
-  </div>
-</li>
-        
-        <li class="products__product">
-  <div class="products__product-shade">
-    Add to cart
-  </div>
-
-  <div class="products__product-ball products__product-ball--discount">
-    -20%
-  </div>
-  <img
-    src="./images/products/p-8.png"
-    alt="Wait"
-    class="products__product-img"
-  />
-  <div class="products__product-body">
-    <div class="products__product-name">Muggo</div>
-    <div class="products__product-desc">Small mugo</div>
-    <div class="products__product-price">
-      <div class="products__product-price-new">Rp 3.000,00</div>
-      <div class="products__product-price-old">Rp 3.500.000</div>
-    </div>
-  </div>
-</li>
+        <div class="desc__col">
+          <li class="desc__list-item">
+            <h3 class="h2 desc__title">A lot of features</h3>
+            <p class="desc__about">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sagittis semper felis.
+            </p>
+          </li>
+  
+          <li class="desc__list-item">
+            <h3 class="h2 desc__title">Another pros</h3>
+            <p class="desc__about">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sagittis semper felis.
+            </p>
+          </li>
+        </div>
 
       </ul>
+    </div>
+  </div>
+</div>
+  <div class="products">
+  <div class="container products__container">
+    <h2 class="h1 products__title">
+      Products
+    </h2>
+    <div class="products__body">
+      <ul class="products__list">
+        <div class="product">
+  <h3 class="h2 product__title">iPhone 12 Max</h3>
+  <div class="product__status product__status--availabe">
+    Available now
+  </div>
+  <div class="product__img-container">
+    <img src="images/products/p-1.png" class="product__img">
+  </div>
+  <div class="product__colors">
+    Available colors
+    <ul class="product__colors-list">
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+    </ul>
+  </div>
+  <div class="product__reviews">
+    <ul class="product__stars">
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+    </ul>
+    <span>(28) reviews</span>
+  </div>
+  <div class="product__price">
+    $945.<span class="product__price--small">95</span>
+  </div>
+</div>
 
-      <button class="products__show-btn">
-        Show More
-      </button>
+        <div class="product">
+  <h3 class="h2 product__title">iPhone 12 Max</h3>
+  <div class="product__status product__status--not-available">
+    Available now
+  </div>
+  <div class="product__img-container">
+    <img src="images/products/p-2.png" class="product__img">
+  </div>
+  <div class="product__colors">
+    Available colors
+    <ul class="product__colors-list">
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+    </ul>
+  </div>
+  <div class="product__reviews">
+    <ul class="product__stars">
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+    </ul>
+    <span>(28) reviews</span>
+  </div>
+  <div class="product__price">
+    $945.<span class="product__price--small">95</span>
+  </div>
+</div>
+
+        <div class="product">
+  <h3 class="h2 product__title">iPhone 12 Max</h3>
+  <div class="product__status product__status--not-available">
+    Available now
+  </div>
+  <div class="product__img-container">
+    <img src="images/products/p-3.png" class="product__img">
+  </div>
+  <div class="product__colors">
+    Available colors
+    <ul class="product__colors-list">
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+    </ul>
+  </div>
+  <div class="product__reviews">
+    <ul class="product__stars">
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+    </ul>
+    <span>(28) reviews</span>
+  </div>
+  <div class="product__price">
+    $945.<span class="product__price--small">95</span>
+  </div>
+</div>
+        <div class="product">
+  <h3 class="h2 product__title">iPhone 12 Max</h3>
+  <div class="product__status product__status--not-available">
+    Available now
+  </div>
+  <div class="product__img-container">
+    <img src="images/products/p-4.png" class="product__img">
+  </div>
+  <div class="product__colors">
+    Available colors
+    <ul class="product__colors-list">
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+    </ul>
+  </div>
+  <div class="product__reviews">
+    <ul class="product__stars">
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+    </ul>
+    <span>(28) reviews</span>
+  </div>
+  <div class="product__price">
+    $945.<span class="product__price--small">95</span>
+  </div>
+</div>
+        <div class="product">
+  <h3 class="h2 product__title">iPhone 12 Max</h3>
+  <div class="product__status product__status--not-available">
+    Available now
+  </div>
+  <div class="product__img-container">
+    <img src="images/products/p-5.png" class="product__img">
+  </div>
+  <div class="product__colors">
+    Available colors
+    <ul class="product__colors-list">
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+    </ul>
+  </div>
+  <div class="product__reviews">
+    <ul class="product__stars">
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+    </ul>
+    <span>(28) reviews</span>
+  </div>
+  <div class="product__price">
+    $945.<span class="product__price--small">95</span>
+  </div>
+</div>
+        <div class="product">
+  <h3 class="h2 product__title">iPhone 12 Max</h3>
+  <div class="product__status product__status--not-available">
+    Available now
+  </div>
+  <div class="product__img-container">
+    <img src="images/products/p-6.png" class="product__img">
+  </div>
+  <div class="product__colors">
+    Available colors
+    <ul class="product__colors-list">
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+    </ul>
+  </div>
+  <div class="product__reviews">
+    <ul class="product__stars">
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+    </ul>
+    <span>(28) reviews</span>
+  </div>
+  <div class="product__price">
+    $945.<span class="product__price--small">95</span>
+  </div>
+</div>
+        <div class="product">
+  <h3 class="h2 product__title">iPhone 12 Max</h3>
+  <div class="product__status product__status--not-available">
+    Available now
+  </div>
+  <div class="product__img-container">
+    <img src="images/products/p-7.png" class="product__img">
+  </div>
+  <div class="product__colors">
+    Available colors
+    <ul class="product__colors-list">
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+    </ul>
+  </div>
+  <div class="product__reviews">
+    <ul class="product__stars">
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+    </ul>
+    <span>(28) reviews</span>
+  </div>
+  <div class="product__price">
+    $945.<span class="product__price--small">95</span>
+  </div>
+</div>
+        <div class="product">
+  <h3 class="h2 product__title">iPhone 12 Max</h3>
+  <div class="product__status product__status--not-available">
+    Available now
+  </div>
+  <div class="product__img-container">
+    <img src="images/products/p-8.png" class="product__img">
+  </div>
+  <div class="product__colors">
+    Available colors
+    <ul class="product__colors-list">
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+    </ul>
+  </div>
+  <div class="product__reviews">
+    <ul class="product__stars">
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+    </ul>
+    <span>(28) reviews</span>
+  </div>
+  <div class="product__price">
+    $945.<span class="product__price--small">95</span>
+  </div>
+</div>
+      </ul>
+    </div>
+    <div class="pagination products__pagination">
+  <ul class="pagination__list">
+    <li class="pagination__list-item">1</li>
+    <li class="pagination__list-item pagination__list-item--selected">2</li>
+    <li class="pagination__list-item">3</li>
+  </ul>
+</div>
+
+  </div>
+</div>
+  <div class="discount">
+  <div class="discount__container container">
+    <div class="discount__body">
+
+      <div class="discount__main">
+        <h2 class="h1 discount__title">
+          Buy MacBook Pro and
+          get 20% <span class="discount__title--dark">DISCOUNT!</span>
+        </h2>
+        <button class="discount__contact-btn">
+          Contact
+        </button>
+      </div>
+
+      <img src="images/discount.png" class="discount__img">
 
     </div>
   </div>
 </div>
-  <div class="tips-tricks">
-  <div class="tips-tricks__container container">
-    
-    <div class="tips-tricks__title">
-      Tips and Tricks
+
+  <div class="popular">
+  <div class="popular__container container">
+    <h2 class="h1 popular__title">Popular models</h2>
+    <div class="popular__body">
+      <ul class="popular__list">
+        
+        <li class="popular__list-item">
+          <div class="popular__img-container">
+            <img src="images/popular/p-1.png" class="popular__img">
+          </div>
+          <div class="popular__top-right">
+            <h3 class="h2 popular__product-title">
+              Macbook Air
+            </h3>
+            <ul class="popular__colors">
+              <li class="popular__color"></li>
+              <li class="popular__color"></li>
+              <li class="popular__color"></li>
+            </ul>
+          </div>
+          <div class="popular__bottom-right">
+            <div class="popular__price-new">$586</div>
+            <div class="popular__price-old">$46.25</div>
+          </div>
+          <div class="popular__sale-label">
+            sale
+          </div>
+        </li>
+
+        
+        <li class="popular__list-item">
+          <div class="popular__img-container">
+            <img src="images/popular/p-2.png" class="popular__img">
+          </div>
+          <div class="popular__top-right">
+            <h3 class="h2 popular__product-title">
+              Macbook Air
+            </h3>
+            <ul class="popular__colors">
+              <li class="popular__color"></li>
+              <li class="popular__color"></li>
+              <li class="popular__color"></li>
+            </ul>
+          </div>
+          <div class="popular__bottom-right">
+            <div class="popular__price-new">$586</div>
+            <div class="popular__price-old">$46.25</div>
+          </div>
+          <div class="popular__sale-label">
+            sale
+          </div>
+        </li>
+
+        <li class="popular__list-item">
+          <div class="popular__img-container">
+            <img src="images/popular/p-3.png" class="popular__img">
+          </div>
+          <div class="popular__top-right">
+            <h3 class="h2 popular__product-title">
+              Macbook Air
+            </h3>
+            <ul class="popular__colors">
+              <li class="popular__color"></li>
+              <li class="popular__color"></li>
+              <li class="popular__color"></li>
+            </ul>
+          </div>
+          <div class="popular__bottom-right">
+            <div class="popular__price-new">$586</div>
+            <div class="popular__price-old">$46.25</div>
+          </div>
+          <div class="popular__sale-label">
+            sale
+          </div>
+        </li>
+
+
+
+      </ul>
     </div>
-
-    <div class="tips-tricks__body">
-
-      <div class="swiper-container tips-tricks__swiper-container">
-
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide tips-tricks__swiper-slide">
-            <img src="./images/swiper/swiper-1.jpg" class="tips-tricks__img">
-            <div class="tips-tricks__swiper-body">
-              <div class="tips-tricks__swiper-title"
-              >How to create living
-                room with love
-              </div>
-              <div class="tips-tricks__swiper-date">
-                20.11.2030
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide tips-tricks__swiper-slide">
-            <img src="./images/swiper/swiper-2.jpg" class="tips-tricks__img">
-            <div class="tips-tricks__swiper-body">
-              <div class="tips-tricks__swiper-title"
-              >How to create living
-                room with love
-              </div>
-              <div class="tips-tricks__swiper-date">
-                20.11.2030
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide tips-tricks__swiper-slide">
-            <img src="./images/swiper/swiper-3.jpg" class="tips-tricks__img">
-            <div class="tips-tricks__swiper-body">
-              <div class="tips-tricks__swiper-title"
-              >How to create living
-                room with love
-              </div>
-              <div class="tips-tricks__swiper-date">
-                20.11.2030
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="swiper-pagination tips-tricks__swiper-pagination"></div>
-
-        <div class="swiper-button-next tips-tricks__button-next">
-          <span class="material-icons">
-            chevron_right
-          </span>
-        </div>
-
-        <div class="swiper-button-prev tips-tricks__button-prev">
-          <span class="material-icons">
-            chevron_left
-          </span>
-        </div>
-
-      </div>
-    </div>
+    <div class="pagination popular__pagination">
+  <ul class="pagination__list">
+    <li class="pagination__list-item">1</li>
+    <li class="pagination__list-item pagination__list-item--selected">2</li>
+    <li class="pagination__list-item">3</li>
+  </ul>
+</div>
 
   </div>
+</div>
+  <div class="toggle-nav">
+  <span class="material-icons toggle-nav__close-icon">
+    close
+  </span>
+  <ul class="toggle-nav__nav">
+    <li class="toggle-nav__nav-link toggle-nav__nav-link--active">Home</li>
+    <li class="toggle-nav__nav-link">Macbook</li>
+    <li class="toggle-nav__nav-link">iPhone</li>
+    <li class="toggle-nav__nav-link">Airpods</li>
+  </ul>
 </div>
 
   <footer class="footer">
-  <div class="footer__container container">
+  <div class="container footer__container">
     <div class="footer__body">
 
+      <div class="footer__rights">
+        All rights reserved
+      </div>
 
-      <div class="footer__section">
-        <div class="footer__title">Funiro.</div>
-        <ul class="footer__section-items">
-          <li class="footer__section-item">
-            <span class="footer__section-text footer__section-text--multiple"
-            >Worldwide furniture store since 2
-              020. We sell over 1000+ branded
-              products on our website
+    <!-- Only mobile -->
+      <ul class="footer__social-list footer__social-list--mobile">
+        <li class="footer__social-link">
+          <i class="fab fa-instagram footer__icon"></i>
+        </li>
+        <li class="footer__social-link">
+          <i class="fab fa-twitter footer__icon"></i>
+        </li>
+        <li class="footer__social-link">
+          <i class="fab fa-github footer__icon"></i>
+        </li>
+      </ul>
+    <!-- Only mobile -->
+
+      <div class="footer__section footer__products-section">
+        <h3 class="footer__section-title">Our products</h3>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <span class="footer__text">
+              Macbook
             </span>
           </li>
-          <li class="footer__section-item">
-            <span class="footer__icon material-icons">
+          <li class="footer__list-item">
+            <span class="footer__text">
+              iPhone
+            </span>
+          </li>
+          <li class="footer__list-item">
+            <span class="footer__text">
+              Airpods
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__section footer__about-section">
+        <h3 class="footer__section-title">About</h3>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <span class="footer__text">
+              About Macbooks
+            </span>
+          </li>
+          <li class="footer__list-item">
+            <span class="footer__text">
+              About iPhone
+            </span>
+          </li>
+          <li class="footer__list-item">
+            <span class="footer__text">
+              About Airpods
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__section footer__contact-section">
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <span class="material-icons footer__icon">
+              call
+            </span>
+            <span class="footer__text footer__text--after-icon">
+              +998 71 241 9666
+            </span>
+          </li>
+          <li class="footer__list-item">
+            <span class="material-icons footer__icon">
+              date_range
+            </span>
+            <span class="footer__text footer__text--after-icon footer__text--multi-line"
+            > 09:00 — 20:00
+              Monday - Sunday
+            </span>
+          </li>
+          <li class="footer__list-item">
+            <span class="material-icons footer__icon">
               location_on
             </span>
-            <span class="footer__item-text">
-              Sawojajar Malang, Indonesia
-            </span>
-          </li>
-          <li class="footer__section-item">
-            <span class="footer__icon material-icons">
-              location_on
-            </span>
-            <span class="footer__item-text">
-              Sawojajar Malang, Indonesia
+            <span class="footer__text footer__text--after-icon footer__text--multi-line"
+            > Uzbekistan, Tashkent,
+              Chilonzor street 25
             </span>
           </li>
         </ul>
       </div>
 
-      <div class="footer__section">
-        <div class="footer__title">Menu</div>
-        <ul class="footer__section-items">
-          <li class="footer__section-item">
-            <span class="footer__section-text">
-              Products
-            </span>
+      <div class="footer__section footer__social-section">
+        <h3 class="footer__section-title">Social Media</h3>
+        <ul class="footer__social-list">
+          <li class="footer__social-link">
+            <i class="fab fa-instagram footer__icon"></i>
           </li>
-          <li class="footer__section-item">
-            <span class="footer__item-text">
-              Rooms
-            </span>
+          <li class="footer__social-link">
+            <i class="fab fa-twitter footer__icon"></i>
           </li>
-          <li class="footer__section-item">
-            <span class="footer__item-text">
-              Inspirations
-            </span>
-          </li>
-          <li class="footer__section-item">
-            <span class="footer__item-text">
-              Terms
-            </span>
-          </li>
-          <li class="footer__section-item">
-            <span class="footer__item-text">
-              Terms, Polices
-            </span>
+          <li class="footer__social-link">
+            <i class="fab fa-github footer__icon"></i>
           </li>
         </ul>
       </div>
-
-      <div class="footer__section">
-        <div class="footer__title">Account</div>
-        <ul class="footer__section-items">
-          <li class="footer__section-item">
-            <span class="footer__section-text">
-              My account
-            </span>
-          </li>
-          <li class="footer__section-item">
-            <span class="footer__item-text">
-              Checkout
-            </span>
-          </li>
-          <li class="footer__section-item">
-            <span class="footer__item-text">
-              My cart
-            </span>
-          </li>
-          <li class="footer__section-item">
-            <span class="footer__item-text">
-              My catalog
-            </span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer__section">
-        <div class="footer__title">Stay connected</div>
-        <ul class="footer__section-items">
-          <li class="footer__section-item">
-            <span class="footer__section-text">
-              Facebook
-            </span>
-          </li>
-          <li class="footer__section-item">
-            <span class="footer__item-text">
-              Instagram
-            </span>
-          </li>
-          <li class="footer__section-item">
-            <span class="footer__item-text">
-              Twitter
-            </span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer__section">
-        <div class="footer__title">Stay updated</div>
-        <div class="footer__search">
-          <input class="footer__search-input" placeholder="Search">
-          <div class="footer__send-btn">
-            <span class="footer__send-icon material-icons">
-              send
-            </span>
-          </div>
-        </div>
-      </div>
-
-
     </div>
   </div>
 </footer>
-
-
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
   <script src="./index.js"></script>
 </body>
 </html>
